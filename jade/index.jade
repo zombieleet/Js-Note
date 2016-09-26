@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+    head
+      meta(name="viewport", content="width=device-width, initial-scale=1")
+      block title
+        title Note PlusPlus
+      link(rel="stylesheet" href="css/font-awesome.css")
+      block appCSS
+        link(rel="stylesheet" href="css/app.css")
+    body
+        header(id="header")
+          block headerOption
+            span(class="title fa-1x") JsNote
+            div(class="fa fa-pull-right")
+              span(class="fa fa-file fa-1x file" id="file")
+              //- span(class="fa fa-toggle-down fa-1x note-toggle-option toggle")              
+              //- ul(class="note-options")
+              //-   li: a(href="createFile.html") New Note
+              //-   li: a(href="#") New Folder
+              //-   li: a(href="#") Music Folder
+      block contentCreateFile
+        div(class="note-no-note")
+          div
+            div(class="fa fa-file-text fa-5x")
+            p
+              | Make a new note by clicking the file button at the top
+    block script
+      script(src="js/app.js")

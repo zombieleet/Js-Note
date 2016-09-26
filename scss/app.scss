@@ -1,0 +1,124 @@
+@import "vars.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'FontAwesome';
+  header {
+    background-color: $themeColor;
+    padding: 1em;
+    color: white;
+    font-weight: bolder;
+    .title {
+      margin-left: -.5em;
+      font-weight: bolder;
+      font-size: 1.5em;
+    }
+    .note-search {
+      width: 51%;
+      position: absolute;
+      top:1.7%;
+      left: 15%;
+      .note-searchnote {
+        border-radius: .5em;
+        padding: .2em;
+        outline: none;
+        width: 100%;
+      }
+    }
+    div {
+      .file {
+          margin-right: .7em;
+          font-size: 1.5em;
+      }
+      .toggle {
+        font-size: 1.5em;
+      }
+      .folder {
+          margin-right: .7em;
+          font-size: 1.5em;
+      }
+      span {
+        cursor: pointer;
+        transition: color .2s ease-in;
+        font-size: 1.5em;
+        &:hover {
+          color: darken(white, 20%);
+        }
+      }
+    }
+  }
+  .note-no-note {
+    > div {
+      text-align: center;
+      div {
+        border: 2px solid $themeColor;
+        border-radius: 7px;
+        color: $themeColor;
+        margin-top: 3em;
+      }
+      > p {
+        margin-top: 5em;
+        font-weight: bolder;
+        color: lighten($themeColor, 10%);
+      }
+    }
+  }
+}
+
+.note-options {
+  // display: none;
+  // position: absolute;
+  list-style: none;
+  background-color: darken($themeColor, 30%);
+  padding: .5em;
+  // width: 50%;
+  > li {
+    padding: .2em;
+    transition: .2s background-color;
+    > a {
+      text-decoration: none;
+      color: inherit;
+    }
+    &:hover {
+      background-color: lighten($themeColor, 10%);
+    }
+  }
+}
+
+[data-display="note-nodisplay"] {
+  display: none;
+}
+
+.note-info {
+  background-color: lighten($themeColor, 20%);
+  padding: .5em;
+  margin-top: .5em;
+  cursor: pointer;
+  transition: background-color .5s -ease-in;
+  .note-title {
+    color: darken($themeColor, 20%);
+    font-weight: bolder;
+    font-size: 1.5em;
+  }
+  .note-time,.note-date {
+    color: $themeColor;
+  }
+  &:hover {
+    background-color: darken($themeColor, 5%);
+  }
+}
+
+.note-note {
+  display: none;
+}
+.note-close {
+  position: relative;
+  top: -2em;
+  color: darken($themeColor, 20%);
+  &:hover {
+    color: darken($themeColor, 10%);
+  }
+}

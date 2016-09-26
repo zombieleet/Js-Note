@@ -1,0 +1,17 @@
+doctype html
+extends index
+
+block title
+  title Read Note
+  
+append appCSS
+  link(rel="stylesheet" href="css/readnote.css")
+  link(rel="stylesheet" href="css/createfile.css")
+block headerOption
+  a(href="index.html"): span(class="fa fa-arrow-left note-back") Back
+  span(class="fa fa-pencil pull-right note-edit") Edit
+
+block contentCreateFile
+
+append script 
+  script(src="js/checkNote.js")

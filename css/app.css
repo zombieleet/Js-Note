@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'FontAwesome'; }
+  body header {
+    background-color: #8063A7;
+    padding: 1em;
+    color: white;
+    font-weight: bolder; }
+    body header .title {
+      margin-left: -.5em;
+      font-weight: bolder;
+      font-size: 1.5em; }
+    body header .note-search {
+      width: 51%;
+      position: absolute;
+      top: 1.7%;
+      left: 15%; }
+      body header .note-search .note-searchnote {
+        border-radius: .5em;
+        padding: .2em;
+        outline: none;
+        width: 100%; }
+    body header div .file {
+      margin-right: .7em;
+      font-size: 1.5em; }
+    body header div .toggle {
+      font-size: 1.5em; }
+    body header div .folder {
+      margin-right: .7em;
+      font-size: 1.5em; }
+    body header div span {
+      cursor: pointer;
+      transition: color .2s ease-in;
+      font-size: 1.5em; }
+      body header div span:hover {
+        color: #cccccc; }
+  body .note-no-note > div {
+    text-align: center; }
+    body .note-no-note > div div {
+      border: 2px solid #8063A7;
+      border-radius: 7px;
+      color: #8063A7;
+      margin-top: 3em; }
+    body .note-no-note > div > p {
+      margin-top: 5em;
+      font-weight: bolder;
+      color: #9b84b9; }
+
+.note-options {
+  list-style: none;
+  background-color: #362948;
+  padding: .5em; }
+  .note-options > li {
+    padding: .2em;
+    transition: .2s background-color; }
+    .note-options > li > a {
+      text-decoration: none;
+      color: inherit; }
+    .note-options > li:hover {
+      background-color: #9b84b9; }
+
+[data-display="note-nodisplay"] {
+  display: none; }
+
+.note-info {
+  background-color: #b5a4cc;
+  padding: .5em;
+  margin-top: .5em;
+  cursor: pointer;
+  transition: background-color .5s -ease-in; }
+  .note-info .note-title {
+    color: #4f3b69;
+    font-weight: bolder;
+    font-size: 1.5em; }
+  .note-info .note-time, .note-info .note-date {
+    color: #8063A7; }
+  .note-info:hover {
+    background-color: #73579a; }
+
+.note-note {
+  display: none; }
+
+.note-close {
+  position: relative;
+  top: -2em;
+  color: #4f3b69; }
+  .note-close:hover {
+    color: #674e89; }
+
+/*# sourceMappingURL=app.css.map */

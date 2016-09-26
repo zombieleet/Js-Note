@@ -1,0 +1,20 @@
+doctype html
+extends index
+
+block title
+  title Create File
+append appCSS
+  link(rel="stylesheet" href="css/createfile.css")
+  
+block headerOption
+  button(class="fa note-cancel") Cancel
+  button(class="fa fa-pull-right note-save") Save
+  
+block contentCreateFile
+  span(class="note-title-error pull-right") Exceeded lenght of text allowed
+  span(class="note-note-title")
+    input(type="text" class="note-title-note" placeholder="ADD TITLE") 
+  div(class="note-write-note" contenteditable)
+  
+block script
+  script(src="js/createfile.js")

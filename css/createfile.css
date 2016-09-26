@@ -1,0 +1,92 @@
+.note-cancel, .note-save {
+  border: 1px solid #674e89;
+  padding: .3em;
+  font-weight: bolder;
+  background: none;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  outline: none;
+  transition: background-color .2s ease-in; }
+  .note-cancel:hover, .note-save:hover {
+    background-color: #4f3b69; }
+
+.note-write-note {
+  padding: .5em;
+  border-bottom: 2px solid #8063A7;
+  line-height: 1;
+  font-weight: 400;
+  color: darkgrey;
+  font-size: 1.5em;
+  outline: none; }
+
+[data-display="displayError"] {
+  position: absolute;
+  top: -2em;
+  text-align: center;
+  background: #1a1a1a;
+  color: white;
+  padding: .5em;
+  border-radius: .5em;
+  font-weight: bolder;
+  animation-name: displayError;
+  animation-timing-function: ease-in;
+  animation-duration: .3s;
+  animation-delay: .1s;
+  animation-fill-mode: forwards; }
+  @media (max-width: 1366px) {
+    [data-display="displayError"] {
+      left: 33em; } }
+  @media (max-width: 1283px) {
+    [data-display="displayError"] {
+      left: 30em; } }
+  @media (max-width: 1158px) {
+    [data-display="displayError"] {
+      left: 25em; } }
+  @media (max-width: 1000px) {
+    [data-display="displayError"] {
+      left: 20em; } }
+  @media (max-width: 800px) {
+    [data-display="displayError"] {
+      left: 15em; } }
+  @media (max-width: 600px) {
+    [data-display="displayError"] {
+      left: 10em; } }
+  @media (max-width: 480px) {
+    [data-display="displayError"] {
+      left: 6.5em; } }
+  @media (max-width: 400px) {
+    [data-display="displayError"] {
+      left: 5em; } }
+
+.note-note-title {
+  display: flex;
+  color: #4f3b69; }
+
+.note-title-note {
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+  color: #674e89;
+  font-weight: bolder; }
+
+.note-title-error {
+  border: 1px solid;
+  background-color: #990000;
+  border-radius: 5px;
+  padding: 0.3em;
+  color: white;
+  display: none; }
+
+[data-display="displayError"] {
+  display: block; }
+
+[data-border="border-style"] {
+  border-bottom: 1px solid #b5a4cc; }
+
+@keyframes displayError {
+  100% {
+    top: 3em; } }
+
+/*# sourceMappingURL=createfile.css.map */

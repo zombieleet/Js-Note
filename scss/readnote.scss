@@ -1,0 +1,46 @@
+@import "vars.scss";
+.note-back, .note-edit {
+  border: 2px solid white;
+  padding: .5em;
+  border-radius: .3em;
+  cursor: pointer;
+
+}
+a {
+  text-decoration: none;
+  color: inherit;
+
+}
+.note-read-note {
+  padding: .5em;
+  // border-bottom: 2px solid $themeColor;
+  line-height: 1;
+  font-weight: 400;
+  color: darkgrey;
+  font-size: 1.5em;
+  outline: none;
+  width: 100vw;
+}
+.note-title-container {
+  border-bottom: 2px solid $themeColor;
+  .note-title-note {
+    margin: 1em;
+    color: $themeColor;
+  }
+}
+.note-read-save {
+  padding: .9em;
+  display: flex;
+  justify-content: center;
+  border-radius: 5%;
+  background-color: $themeColor;
+  border: none;
+  color: white;
+  font-weight: bolder;
+  margin-top: .5em;
+  outline: none;
+  cursor: pointer;
+}
+[data-bottom-border='note-read-border'] {
+  border-bottom: 2px solid $themeColor;
+}

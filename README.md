@@ -1,2 +1,2 @@
 # Js-Note
-Note Application Implemented in Javascript for mobile
+Note Application Implemented in es6*(traceur) for mobile

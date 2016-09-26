@@ -1,2 +1,2 @@
 # Js-Note
-Note Application Implemented in Javascript
+Note Application Implemented in Javascript for mobile

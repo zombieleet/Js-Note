@@ -92,7 +92,7 @@ $traceurRuntime.registerModule("../trace/createfile.js", [], function() {
       }
       return ($traceurRuntime.createClass)(Cancel, {cancelNoteCreate: function() {
           this.cancel().addEventListener('click', function() {
-            location.assign("../index.html");
+            location.assign("../www/index.html");
           });
         }}, {});
     }();

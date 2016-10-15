@@ -76,7 +76,7 @@ $traceurRuntime.registerModule("../trace/app.js", [], function() {
       }
       return ($traceurRuntime.createClass)(NoteFile, {createNote: function() {
           this.file().addEventListener('click', function() {
-            location.assign('../createFile.html');
+            location.assign('../www/createFile.html');
           });
         }}, {});
     }();
@@ -103,7 +103,7 @@ $traceurRuntime.registerModule("../trace/app.js", [], function() {
         targetSrc.parentNode.remove();
         if (!document.querySelector(".note-info")) {
           window.localStorage.removeItem("jsNote");
-          location.assign("../index.html");
+          location.assign("../www/index.html");
         }
         return false;
       } else if (targetSrc.className !== "note-info") {
@@ -115,7 +115,7 @@ $traceurRuntime.registerModule("../trace/app.js", [], function() {
       window.localStorage.setItem("Read:noteNote", noteNote);
       window.localStorage.setItem("Read:noteTitle", noteTitle);
       window.localStorage.setItem("Read:noteTime", noteTime);
-      location.assign("../readnote.html");
+      location.assign("../www/readnote.html");
     }
   });
   return {};

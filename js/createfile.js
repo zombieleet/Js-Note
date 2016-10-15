@@ -34,7 +34,7 @@ $traceurRuntime.registerModule("../trace/createfile.js", [], function() {
               var title$__4 = noteTileNote.value;
               localStorage.setItem("jsNote", "jsNote");
               localStorage.setItem(("Title:" + title$__4 + "-" + datestr + "-" + timestr), note);
-              location.assign("../index.html");
+              location.assign("../www/index.html");
             }
           });
         }}, {});
